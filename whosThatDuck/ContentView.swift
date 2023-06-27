@@ -4,6 +4,7 @@
 //
 //  Created by Scholar on 6/26/23.
 //
+//FILE IS FOR HOME SCREEN(S)
 
 import SwiftUI
 
