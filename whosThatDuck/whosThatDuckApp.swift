@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
 @main
 struct whosThatDuckApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
         }
     }
 }
