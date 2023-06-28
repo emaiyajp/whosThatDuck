@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2627BC2A4CC3750066777D /* MallardAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2627BB2A4CC3750066777D /* MallardAnswer.swift */; };
 		BDFE80862A4A3E6B00B3BBA7 /* whosThatDuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */; };
 		BDFE80882A4A3E6B00B3BBA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE80872A4A3E6B00B3BBA7 /* ContentView.swift */; };
 		BDFE808A2A4A3E6C00B3BBA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE80892A4A3E6C00B3BBA7 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD2627BB2A4CC3750066777D /* MallardAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallardAnswer.swift; sourceTree = "<group>"; };
 		BDFE80822A4A3E6B00B3BBA7 /* whosThatDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whosThatDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whosThatDuckApp.swift; sourceTree = "<group>"; };
 		BDFE80872A4A3E6B00B3BBA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */,
 				BDFE80872A4A3E6B00B3BBA7 /* ContentView.swift */,
 				BDFE80D02A4B8E8700B3BBA7 /* gamingScreen.swift */,
+				BD2627BB2A4CC3750066777D /* MallardAnswer.swift */,
 				BDFE80892A4A3E6C00B3BBA7 /* Assets.xcassets */,
 				BDFE808B2A4A3E6C00B3BBA7 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				BDFE80882A4A3E6B00B3BBA7 /* ContentView.swift in Sources */,
 				BDFE80862A4A3E6B00B3BBA7 /* whosThatDuckApp.swift in Sources */,
 				BDFE80D12A4B8E8700B3BBA7 /* gamingScreen.swift in Sources */,
+				BD2627BC2A4CC3750066777D /* MallardAnswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

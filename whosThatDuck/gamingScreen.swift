@@ -9,41 +9,60 @@
 //buttons for options (answers); leads to actions that reveal silhouette, reveal the answer by replacing info text (ex. "It's a... Mallard Duck"), adds information and awareness below answer, and shows button for "Next >"
 //button for "Next >" that leads to next question
 
+// NEED TO FIX: "Who's That Duck" to right hand side, maybe a little bigger; add info about MALLARD DUCK; Fix font and style of RUDDY DUCK BUTTON and add navigation link to next silhouette; fix formatting for MALLARD DUCK navigation link (correct answer); add another incorrect answer button
 import SwiftUI
 
 struct gamingScreen: View {
+    @State private var wrongRuddy = ""
+    @State private var wrongAmBlack = ""
+    
     var body: some View {
-        ZStack {
-            (Color(red: 0.027450980392156862, green: 0.5607843137254902, blue: 0.43137254901960786))
-                .ignoresSafeArea()
-            
-            VStack {
-                
-                Text("Who's That Duck?")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    Spacer()
-                    .padding()
-                //Need to figure out home navigation button, how to move "Who's That Duck?" mini title to left!
-               
-                Image("Mallard Silhouette")
-                    Spacer()
-                    .padding()
-                
-                Text("[info about duck]")
-                    .font(.headline)
-                    .foregroundColor(Color.white)
-                    Spacer()
-                    .padding()
         
-                //DO WE WANT A BUTTON OR ANOTHER NAVIGATION LINK TO FILE THAT REVEALS ANSWER
-               
+        NavigationStack {
+            
+            ZStack {
+                (Color(red: 0.027450980392156862, green: 0.5607843137254902, blue: 0.43137254901960786))
+                    .ignoresSafeArea()
+                
+                VStack {
                     
+                    Text("Who's That Duck?")
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                    Spacer()
+                        .padding()
+                    //Need to figure out home navigation button, how to move "Who's That Duck?" mini title to left!
+                    
+                    Image("Mallard Silhouette")
+                    Spacer()
+                        .padding()
+                    
+                    Text("[info about duck]")
+                        .font(.headline)
+                        .foregroundColor(Color.white)
+                    Spacer()
+                        .padding()
+                    
+                    //navigation link for correct answer, button for wrong answer that tells them it's incorrect
+                    Button("Ruddy Duck") {
+                        wrongRuddy = "Oops, that's not right!"
+                    }
+                    .font(.title2)
+                        Text(wrongRuddy)
+                    
+                    NavigationLink(destination: MallardAnswer()) {
+                        Text("Mallard Duck")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .padding()
+                    }
+                }
             }
         }
+        
     }
-    
     struct gamingScreen_Previews: PreviewProvider {
         static var previews: some View {
             gamingScreen()

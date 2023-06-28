@@ -4,8 +4,7 @@
 //
 //  Created by Scholar on 6/26/23.
 //
-//FILE IS FOR HOME SCREEN(S)
-//button for "Let's Start!" that connects to/navigates toward gaming screen for first- users
+//NEED TO FIX FONT and SHADOWS, SPACING 
 
 
 import SwiftUI
