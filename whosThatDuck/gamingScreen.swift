@@ -16,11 +16,32 @@ struct gamingScreen: View {
         ZStack {
             (Color(red: 0.027450980392156862, green: 0.5607843137254902, blue: 0.43137254901960786))
                 .ignoresSafeArea()
+            
             VStack {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+                
+                Text("Who's That Duck?")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    Spacer()
+                    .padding()
+                //Need to figure out home navigation button, how to move "Who's That Duck?" mini title to left!
+               
+                Image("Mallard Silhouette")
+                    Spacer()
+                    .padding()
+                
+                Text("[info about duck]")
+                    .font(.headline)
+                    .foregroundColor(Color.white)
+                    Spacer()
+                    .padding()
+        
+                //DO WE WANT A BUTTON OR ANOTHER NAVIGATION LINK TO FILE THAT REVEALS ANSWER
+               
+                    
             }
         }
-        .navigationTitle("Home")
     }
     
     struct gamingScreen_Previews: PreviewProvider {
