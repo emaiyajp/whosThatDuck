@@ -21,7 +21,11 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    Spacer()
+                        Spacer()
+                        .padding()
+                    
+                    Image("Mallard Silhouette")
+                        Spacer()
                         .padding()
                     
                     NavigationLink(destination: gamingScreen()) {
@@ -38,6 +42,7 @@ struct ContentView: View {
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
+            
         }
     }
 }
