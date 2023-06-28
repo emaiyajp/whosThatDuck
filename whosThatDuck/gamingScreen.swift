@@ -20,6 +20,7 @@ struct gamingScreen: View {
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
             }
         }
+        .navigationTitle("Home")
     }
     
     struct gamingScreen_Previews: PreviewProvider {
