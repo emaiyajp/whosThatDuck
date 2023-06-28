@@ -29,12 +29,21 @@ struct MallardAnswer: View {
                     .padding()
                 
                 Text("This is a...")
+                    .font (.custom("Unkempt-Bold", fixedSize: 25))
+                    .foregroundColor(Color(hue: 0.142, saturation: 0.133, brightness: 0.913))
                 
                 Text("Mallard Duck")
+                    .font (.custom("Unkempt-Bold", fixedSize: 30))
+                    .foregroundColor(Color(hue: 0.142, saturation: 0.133, brightness: 0.913))
                 
                 Text("[info and awareness]")
                     .font(.headline)
                     .foregroundColor(Color.white)
+                
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    Text("Next >")
+                }
+                .foregroundColor(Color.white)
                 Spacer()
                     .padding()
             }

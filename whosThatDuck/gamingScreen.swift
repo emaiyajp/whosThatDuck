@@ -38,7 +38,7 @@ struct gamingScreen: View {
                     Spacer()
                         .padding()
                     
-                    Text("[info about duck]")
+                    Text("This is a common ancestor to almost every domestic breed of duck.")
                         .font (.custom("Unkempt-Bold", fixedSize: 20))
                         .foregroundColor(Color.white)
                     Spacer()
