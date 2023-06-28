@@ -13,12 +13,18 @@ import SwiftUI
 
 struct gamingScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            (Color(red: 0.027450980392156862, green: 0.5607843137254902, blue: 0.43137254901960786))
+                .ignoresSafeArea()
+            VStack {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            }
+        }
     }
-}
-
-struct gamingScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        gamingScreen()
+    
+    struct gamingScreen_Previews: PreviewProvider {
+        static var previews: some View {
+            gamingScreen()
+        }
     }
 }
