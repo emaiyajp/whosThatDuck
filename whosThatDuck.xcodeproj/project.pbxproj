@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD14AB7F2A4CD24000CE6E4B /* Unkempt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD14AB7C2A4CD24000CE6E4B /* Unkempt-Bold.ttf */; };
+		BD14AB802A4CD24000CE6E4B /* Unkempt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD14AB7D2A4CD24000CE6E4B /* Unkempt-Regular.ttf */; };
+		BD14AB812A4CD24000CE6E4B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD14AB7E2A4CD24000CE6E4B /* LICENSE.txt */; };
 		BD2627BC2A4CC3750066777D /* MallardAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2627BB2A4CC3750066777D /* MallardAnswer.swift */; };
 		BDFE80862A4A3E6B00B3BBA7 /* whosThatDuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */; };
 		BDFE80882A4A3E6B00B3BBA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE80872A4A3E6B00B3BBA7 /* ContentView.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD14AB7C2A4CD24000CE6E4B /* Unkempt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unkempt-Bold.ttf"; sourceTree = "<group>"; };
+		BD14AB7D2A4CD24000CE6E4B /* Unkempt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unkempt-Regular.ttf"; sourceTree = "<group>"; };
+		BD14AB7E2A4CD24000CE6E4B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BD14AB822A4CD28E00CE6E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD2627BB2A4CC3750066777D /* MallardAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallardAnswer.swift; sourceTree = "<group>"; };
 		BDFE80822A4A3E6B00B3BBA7 /* whosThatDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whosThatDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whosThatDuckApp.swift; sourceTree = "<group>"; };
@@ -36,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD14AB7B2A4CD24000CE6E4B /* Unkempt */ = {
+			isa = PBXGroup;
+			children = (
+				BD14AB7C2A4CD24000CE6E4B /* Unkempt-Bold.ttf */,
+				BD14AB7D2A4CD24000CE6E4B /* Unkempt-Regular.ttf */,
+				BD14AB7E2A4CD24000CE6E4B /* LICENSE.txt */,
+			);
+			path = Unkempt;
+			sourceTree = "<group>";
+		};
 		BDFE80792A4A3E6B00B3BBA7 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +72,12 @@
 		BDFE80842A4A3E6B00B3BBA7 /* whosThatDuck */ = {
 			isa = PBXGroup;
 			children = (
+				BD14AB822A4CD28E00CE6E4B /* Info.plist */,
 				BDFE80852A4A3E6B00B3BBA7 /* whosThatDuckApp.swift */,
 				BDFE80872A4A3E6B00B3BBA7 /* ContentView.swift */,
 				BDFE80D02A4B8E8700B3BBA7 /* gamingScreen.swift */,
 				BD2627BB2A4CC3750066777D /* MallardAnswer.swift */,
+				BD14AB7B2A4CD24000CE6E4B /* Unkempt */,
 				BDFE80892A4A3E6C00B3BBA7 /* Assets.xcassets */,
 				BDFE808B2A4A3E6C00B3BBA7 /* Preview Content */,
 			);
@@ -133,6 +152,9 @@
 			files = (
 				BDFE808D2A4A3E6C00B3BBA7 /* Preview Assets.xcassets in Resources */,
 				BDFE808A2A4A3E6C00B3BBA7 /* Assets.xcassets in Resources */,
+				BD14AB802A4CD24000CE6E4B /* Unkempt-Regular.ttf in Resources */,
+				BD14AB812A4CD24000CE6E4B /* LICENSE.txt in Resources */,
+				BD14AB7F2A4CD24000CE6E4B /* Unkempt-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"whosThatDuck/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = whosThatDuck/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -305,6 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"whosThatDuck/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = whosThatDuck/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

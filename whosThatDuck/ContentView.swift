@@ -17,9 +17,11 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 VStack {
                     Text("Who's That Duck?")
-                        .font(.largeTitle)
+                        .font (.custom("Unkempt-Bold", fixedSize: 45))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.top)
                         Spacer()
                         .padding()
                     
@@ -29,10 +31,9 @@ struct ContentView: View {
                     
                     NavigationLink(destination: gamingScreen()) {
                         Text("Let's Start!")
-                            .font(.title2)
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
-                            .padding()
+                            .padding() .font (.custom("Unkempt-Bold", fixedSize: 30))
                     }
                     
                 }

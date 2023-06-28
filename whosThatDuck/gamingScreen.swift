@@ -27,9 +27,9 @@ struct gamingScreen: View {
                 VStack {
                     
                     Text("Who's That Duck?")
-                        .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .font (.custom("Unkempt-Bold", fixedSize: 25))
                     Spacer()
                         .padding()
                     //Need to figure out home navigation button, how to move "Who's That Duck?" mini title to left!
@@ -39,7 +39,7 @@ struct gamingScreen: View {
                         .padding()
                     
                     Text("[info about duck]")
-                        .font(.headline)
+                        .font (.custom("Unkempt-Bold", fixedSize: 20))
                         .foregroundColor(Color.white)
                     Spacer()
                         .padding()
@@ -48,15 +48,17 @@ struct gamingScreen: View {
                     Button("Ruddy Duck") {
                         wrongRuddy = "Oops, that's not right!"
                     }
-                    .font(.title2)
-                        Text(wrongRuddy)
+                    .foregroundColor(Color(hue: 0.142, saturation: 0.133, brightness: 0.913))
+                    .font (.custom("Unkempt-Bold", fixedSize: 30))
                     
+                        Text(wrongRuddy)
+ // Need to figure out how to remove other options once the wrong button is pushed.
+                   
                     NavigationLink(destination: MallardAnswer()) {
                         Text("Mallard Duck")
-                            .font(.title2)
+                            .font (.custom("Unkempt-Bold", fixedSize: 30))
                             .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding()
+                            .padding().foregroundColor(Color(hue: 0.142, saturation: 0.133, brightness: 0.913))
                     }
                 }
             }
