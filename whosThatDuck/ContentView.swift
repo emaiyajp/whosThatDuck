@@ -4,8 +4,6 @@
 //
 //  Created by Scholar on 6/26/23.
 //
-//NEED TO FIX FONT and SHADOWS, SPACING 
-
 
 import SwiftUI
 
@@ -39,7 +37,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Home")
+            .navigationTitle("Who's That Duck?")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
             
